@@ -9,7 +9,7 @@ contactForm?.addEventListener("submit", (event) => {
   const contact = String(formData.get("contact") || "").trim();
   const message = String(formData.get("message") || "").trim();
 
-  const subject = encodeURIComponent("Question for Deep Creek Grill");
+  const subject = encodeURIComponent("Question for Da Lunch Box");
   const body = encodeURIComponent(
     `Name: ${name || "Not provided"}\nContact: ${contact || "Not provided"}\n\n${message || "I'd like to ask about today's menu."}`
   );
